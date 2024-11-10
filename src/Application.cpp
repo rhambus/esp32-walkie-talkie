@@ -62,6 +62,10 @@ Application::Application()
 
 void Application::begin()
 {
+  // **Added Code: Print Station ID for identification**
+  Serial.print("Starting Station ID: ");
+  Serial.println(STATION_ID);
+
   // show a flashing indicator that we are trying to connect
   m_indicator_led->set_default_color(0);
   m_indicator_led->set_is_flashing(true, 0xff0000);

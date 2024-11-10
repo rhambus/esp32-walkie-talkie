@@ -1,3 +1,5 @@
+
+
 #include <freertos/FreeRTOS.h>
 #include <driver/i2s.h>
 #include <driver/gpio.h>
@@ -5,6 +7,9 @@
 // WiFi credentials
 #define WIFI_SSID << YOUR_SSID >>
 #define WIFI_PSWD << YOUR_PASSWORD >>
+
+// Unique Station ID
+#define STATION_ID 1  // Set station ID here (1-5)
 
 // sample rate for the system
 #define SAMPLE_RATE 16000
